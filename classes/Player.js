@@ -1,7 +1,3 @@
-/*
- Player ( un simplu div ), 
- iar daca apasam arrow down, sa il miscam in jos
- */
 class Player {
   constructor() {
     this.div = Player.display();
@@ -32,7 +28,6 @@ class Player {
 
       }
       this.hitWall();
-
     })
   }
 
@@ -50,7 +45,6 @@ class Player {
     style.left = "20px"
 
     gameContainer.appendChild(div);
-
     return div;
 
   }
@@ -59,8 +53,6 @@ class Player {
     if (parseInt(this.div.style.top) === gameContainer.offsetHeight) {
       console.log('ai trecut limita de jos')
       alert("STOP !")
-      parseInt(this.div.style.top) === gameContainer.offsetHeight;
-
     } else if (parseInt(this.div.style.top) === -20) {
       console.log('ai trecut limita de sus')
       alert("STOP !")
